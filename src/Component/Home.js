@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import $ from 'jquery';
 
 const Home = () => {
 const [user , setUser] = useState('');
@@ -8,6 +9,9 @@ const handleSubmit = () => {
   alert(user)
 }
  
+useEffect (() =>{
+ 
+},[])
 return (
 <div>
 
