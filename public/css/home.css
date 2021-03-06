@@ -1,0 +1,60 @@
+* {
+    margin:0;
+    padding:0;
+    font:12pt Arial;
+}
+
+body {
+    background-color: #E8FDFF;
+    background-image: url(../images/instagram-hand.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo img{
+  height:80px;
+  width: 80px;
+  
+}
+
+.insta_text h1{
+    text-align: center;
+    color: #819090;
+    font-size: 30px;
+}
+
+form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.field {
+  display:flex;
+  position:relative;
+  margin:20px auto;
+  width:500px;
+  flex-direction:row;
+  
+}
+
+
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid #819090;
+  border-left: none;
+  border-top: none;
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color: #819090;
+  color: #fff;
+  border:none;
+}
+
