@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import $ from 'jquery';
+import $, { error } from 'jquery';
 
 const Home = () => {
 const [user , setUser] = useState('');
 
 const handleSubmit = () => {
-  alert(user)
+  axios.post("https://www.instagram.com/web/search/topsearch/?context=blended&query="+user+"&include_reel=false&count=10")
+  .then((response)=> {
+    console.log(response);
+  } , (error)=> {
+
+  })
+
 }
  
 useEffect (() =>{
@@ -22,7 +28,12 @@ return (
 <div className="field" id="searchform">
   <input type="text" id="searchterm" value={user} onChange={(e) => setUser(e.target.value)} placeholder="Search username" />
   <button type="button" id="search" onClick={handleSubmit}><i className="fas fa-search"></i></button>
-</div></form>
+</div>
+{/* <div className="preview_user">
+  <li>hii</li>
+  <li>hii</li>
+</div> */}
+</form>
 </div>
 )
 }
