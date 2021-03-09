@@ -4,10 +4,22 @@ import $ from 'jquery';
 
 const Home = () => {
 const [user , setUser] = useState('');
-
+ 
+const APIUrl = 'https://www.instagram.com/'+ user+'/?__a=1';
 const handleSubmit = () => {
-  alert(user)
+
+  axios.get(APIUrl)
+  .then((response) => { 
+   
+    console.log(response,"userData.............");
+ 
+     }, (error) =>{
+ 
+     });
+
 }
+
+
  
 useEffect (() =>{
  
