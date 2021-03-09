@@ -24,6 +24,13 @@ body {
     font-size: 30px;
 }
 
+.preview_user li{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  list-style-type: none
+}
+
 form {
     position: fixed;
     left: 0;
