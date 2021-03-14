@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>InstaBig - Instagram Profile Picture, Photo, Video, Story, Reels, IGTV Downloader Online</title>
+	<meta name="description" content="Download full size Instagram Profile Pictures, Photos, Videos, Stories, Reels and IGTV videos with InstaBig.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+	<link href="https://instabig.net/css/main.css?v=4.894" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="https://instabig.net/manifest.json">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://instabig.net/cdn/img/favicon.png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65465319-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-65465319-3');
+	</script>
+
+	<script data-ad-client="ca-pub-6411740468955874" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+
+	<!-- CONTAINER -->
+
+	<div class="con">
+		<div class="conInner">
+			<div class="fl conButton">
+				<a href="https://instabig.net">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18 conIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+				</a>
+			</div>
+			<div class="fl conSearch">
+				<input type="text" class="inpSearch" autocorrect="off" autocapitalize="none" placeholder="Search username">
+				<a id="searchButton">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 searchIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+				</a>
+			</div>
+			<div class="fl taR conButton">
+				<a href="https://instabig.net/history">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="history" class="svg-inline--fa fa-history fa-w-16 conIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 255.531c.253 136.64-111.18 248.372-247.82 248.468-59.015.042-113.223-20.53-155.822-54.911-11.077-8.94-11.905-25.541-1.839-35.607l11.267-11.267c8.609-8.609 22.353-9.551 31.891-1.984C173.062 425.135 212.781 440 256 440c101.705 0 184-82.311 184-184 0-101.705-82.311-184-184-184-48.814 0-93.149 18.969-126.068 49.932l50.754 50.754c10.08 10.08 2.941 27.314-11.313 27.314H24c-8.837 0-16-7.163-16-16V38.627c0-14.254 17.234-21.393 27.314-11.314l49.372 49.372C129.209 34.136 189.552 8 256 8c136.81 0 247.747 110.78 248 247.531zm-180.912 78.784l9.823-12.63c8.138-10.463 6.253-25.542-4.21-33.679L288 256.349V152c0-13.255-10.745-24-24-24h-16c-13.255 0-24 10.745-24 24v135.651l65.409 50.874c10.463 8.137 25.541 6.253 33.679-4.21z"></path></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Search results -->
+
+	<div class="searchResultsBox dpN">
+		<div id="searchUserInfo"></div>
+	</div>
+
+	<!-- BODY -->
+
+	<div class="fl bdy">
+		<div class="bdyInner">
+
+		<!-- ADS FRAME -->
+		<div class="ads mb45">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Home 1 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-6411740468955874"
+			     data-ad-slot="9841524366"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
+			<div class="fl popular mb45">
+				<span class="popularH1">Popular</span>
+
+				<!-- Popular #1 -->
+				<a href="https://instabig.net/fullsize/amandacerny?ref=popular">
+					<div class="fl popularPrfInfo">
+						<div class="fl popularPrfPic">
+							<img id="imgPrfPic" class="popularImgPrfPic" src="https://instabig.net/ac.jpg">
+						</div>
+						<div class="fl popularPrfCont">
+							<div class="fl popularPrfContL">
+								<div id="prfUsernameDiv" class="fl popularPrfUsername">
+									<span id="prfUsername" class="fw600">amandacerny</span>
+									<div id="prfVerifiedDiv"  class="dpN popularMiddleIcon">
+										<svg class="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea"/></svg>
+									</div>
+								</div>
+								<div id="prfName" class="fl popularPrfName">Amanda 𝕮𝖊𝖗𝖓𝖞</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Popular #2 -->
+				<a href="https://instabig.net/fullsize/hannahstocking?ref=popular">
+					<div class="fl popularPrfInfo popularML15">
+						<div class="fl popularPrfPic">
+							<img id="imgPrfPic" class="popularImgPrfPic" src="https://instabig.net/hs.jpg">
+						</div>
+						<div class="fl popularPrfCont">
+							<div class="fl popularPrfContL">
+								<div id="prfUsernameDiv" class="fl popularPrfUsername">
+									<span id="prfUsername" class="fw600">hannahstocking</span>
+									<div id="prfVerifiedDiv"  class="dpN popularMiddleIcon">
+										<svg class="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea"/></svg>
+									</div>
+								</div>
+								<div id="prfName" class="fl popularPrfName">Hannah Stocking</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Popular #3 -->
+				<a href="https://instabig.net/fullsize/addisonraee?ref=popular">
+					<div class="fl popularPrfInfo popularML15">
+						<div class="fl popularPrfPic">
+							<img id="imgPrfPic" class="popularImgPrfPic" src="https://instabig.net/ar.jpg">
+						</div>
+						<div class="fl popularPrfCont">
+							<div class="fl popularPrfContL">
+								<div id="prfUsernameDiv" class="fl popularPrfUsername">
+									<span id="prfUsername" class="fw600">addisonraee</span>
+									<div id="prfVerifiedDiv"  class="dpN popularMiddleIcon">
+										<svg class="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea"/></svg>
+									</div>
+								</div>
+								<div id="prfName" class="fl popularPrfName">Addison Rae ♥️</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Nav Bar -->
+			<div class="fl navBar mb45">
+				<div class="nav navHome">
+					<a href="https://instabig.net/profile-picture">
+						<div class="navIn navInHomePage">
+							<div class="middleIcon">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16 navIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path></svg>
+							</div>
+							<span class="fs13 navTitles">Profile Picture</span>
+						</div>
+					</a>
+					<a href="https://instabig.net/posts">
+						<div class="navIn navInHomePage">
+							<div class="middleIcon">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="border-all" class="svg-inline--fa fa-border-all fa-w-14 navIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-32 64v128H256V96zm-192 0v128H64V96zM64 416V288h128v128zm192 0V288h128v128z"></path></svg>
+							</div>
+							<span class="fs13 navTitles">Posts</span>
+						</div>
+					</a>
+					<a href="https://instabig.net/stories">
+						<div class="navIn navInHomePage">
+							<div class="middleIcon">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" class="svg-inline--fa fa-spinner fa-w-16 navIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg>
+							</div>
+							<span class="fs13 navTitles">Stories</span>
+						</div>
+					</a>
+					<a href="https://instabig.net/reels">
+						<div class="navIn navInHomePage">
+							<div class="middleIcon">
+								<svg version="1.1" id="Layer_1" class="navIcons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.14 122.88" style="enable-background:new 0 0 122.14 122.88" xml:space="preserve"><g><path d="M35.14,0H87c9.65,0,18.43,3.96,24.8,10.32c6.38,6.37,10.34,15.16,10.34,24.82v52.61c0,9.64-3.96,18.42-10.32,24.79 l-0.02,0.02c-6.38,6.37-15.16,10.32-24.79,10.32H35.14c-9.66,0-18.45-3.96-24.82-10.32l-0.24-0.27C3.86,105.95,0,97.27,0,87.74 V35.14c0-9.67,3.95-18.45,10.32-24.82S25.47,0,35.14,0L35.14,0z M91.51,31.02l0.07,0.11h21.6c-0.87-5.68-3.58-10.78-7.48-14.69 C100.9,11.64,94.28,8.66,87,8.66h-8.87L91.51,31.02L91.51,31.02z M81.52,31.13L68.07,8.66H38.57l13.61,22.47H81.52L81.52,31.13z M42.11,31.13L28.95,9.39c-4.81,1.16-9.12,3.65-12.51,7.05c-3.9,3.9-6.6,9.01-7.48,14.69H42.11L42.11,31.13z M113.48,39.79H8.66 v47.96c0,7.17,2.89,13.7,7.56,18.48l0.22,0.21c4.8,4.8,11.43,7.79,18.7,7.79H87c7.28,0,13.9-2.98,18.69-7.77l0.02-0.02 c4.79-4.79,7.77-11.41,7.77-18.69V39.79L113.48,39.79z M50.95,54.95l26.83,17.45c0.43,0.28,0.82,0.64,1.13,1.08 c1.22,1.77,0.77,4.2-1,5.42L51.19,94.67c-0.67,0.55-1.53,0.88-2.48,0.88c-2.16,0-3.91-1.75-3.91-3.91V58.15h0.02 c0-0.77,0.23-1.55,0.7-2.23C46.76,54.15,49.19,53.72,50.95,54.95L50.95,54.95L50.95,54.95z"/></g></svg>
+							</div>
+							<span class="fs13 navTitles">Reels</span>
+						</div>
+					</a>
+					<a href="https://instabig.net/igtv">
+						<div class="navIn navInHomePage">
+							<div class="middleIcon">
+								<svg version="1.1" id="Layer_1" class="navIcons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 108.56 122.88" style="enable-background:new 0 0 108.56 122.88" xml:space="preserve"><g><path d="M30.47,16.05h12.47l-6.35-7.16c-1.96-2.21-1.75-5.59,0.46-7.55c2.21-1.96,5.59-1.75,7.55,0.46l9.11,10.27L62.81,1.8 c1.96-2.21,5.34-2.42,7.55-0.46c2.21,1.96,2.42,5.34,0.46,7.55l-6.35,7.16h13.62c8.4,0,16.04,3.43,21.57,8.96 c5.49,5.49,8.9,13.05,8.9,21.35v46.21c0,8.3-3.41,15.86-8.9,21.35c-5.53,5.53-13.16,8.96-21.57,8.96H30.47 c-8.4,0-16.04-3.43-21.57-8.96C3.41,108.43,0,100.87,0,92.57V46.36c0-8.3,3.41-15.86,8.9-21.35 C14.43,19.48,22.07,16.05,30.47,16.05L30.47,16.05z M27.88,75.18c-2.86,0.74-5.78-0.98-6.52-3.84c-0.74-2.86,0.98-5.78,3.84-6.52 l28.8-7.45c2.86-0.74,5.78,0.98,6.52,3.84c0.14,0.53,0.19,1.07,0.17,1.59l-0.32,6.38l19.17-5.52c2.84-0.81,5.79,0.83,6.61,3.67 c0.81,2.84-0.83,5.79-3.67,6.61l-26.02,7.5c-0.64,0.23-1.34,0.34-2.06,0.31c-2.95-0.14-5.23-2.65-5.1-5.6l0.33-6.58L27.88,75.18 L27.88,75.18z M78.09,26.48H30.47c-5.4,0-10.31,2.22-13.88,5.78c-3.6,3.6-5.84,8.59-5.84,14.1v46.21c0,5.51,2.24,10.5,5.84,14.1 c3.57,3.57,8.48,5.78,13.88,5.78h47.61c5.4,0,10.31-2.22,13.88-5.78c3.6-3.6,5.84-8.59,5.84-14.1V46.36c0-5.51-2.24-10.5-5.84-14.1 C88.4,28.69,83.49,26.48,78.09,26.48L78.09,26.48z"/></g></svg>
+							</div>
+							<span class="fs13 navTitles">IGTV</span>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="fl searchInBody mb45">
+				<span class="searchInBodyH1">Search for an Instagram username or paste the post link:</span>
+				<input type="text" class="inpSearch inpSearchBody" autocorrect="off" autocapitalize="none" placeholder="https://www.instagram.com/p/CH82CJOng28/">
+				<div class="searchResultsBoxInBody dpN">
+					<div id="searchUserInfoInBody"></div>
+				</div>
+			</div>
+
+
+			<!-- SEO -->
+			<div class="fl description mb45">
+				<h1>Download Instagram Profile Pictures, Photos, Videos, Stories, Reels and IGTV Videos</h1>
+				<p>You can view or download Instagram profile picture, photo, video, story, reels and IGTV videos to your phone and computer in full resolution with Instagram content downloader. Instagram does not allow you to download photos and videos. For this reason, you can only download Instagram content using online free download tools.</p>
+				<p>Downloading Instagram content is very easy with InstaBig. You can search by typing the username in the smart search box above, or by pasting the link of any Instagram post (photo, video, reels, IGTV) you can download Instagram posts in full resolution to your phone and computer very easily and quickly.</p>
+				<h2>Download Full Resolution Instagram Profile Picture</h2>
+				<p>To view and download Instagram profile pictures in full resolution, you can search by typing the username of the user whose profile picture you want to download in the smart search box above, or you can download Instagram profile pictures in full resolution by pasting the Instagram user's profile link.</p>
+				<h2>Download Instagram Photo and Video</h2>
+				<p>To view and download Instagram photos and videos in full resolution, you can search by typing the username of the user whose posts you want to download in the smart search box above, or you can download Instagram photos and videos in full resolution by pasting the link of any post.</p>
+				<h2>Download Instagram Stories</h2>
+				<p>To view and download Instagram stories in full resolution, you can search by typing the username of the user whose stories you want to download in the smart search box above and download Instagram stories in full resolution.</p>
+				<h2>Download Instagram Reels</h2>
+				<p>To view and download Instagram reels in full resolution, you can search by typing the username of the user whose reels you want to download in the smart search box above, or you can download Instagram reels in full resolution by pasting the link of any reels.</p>
+				<h2>Download Instagram IGTV</h2>
+				<p>To view and download Instagram IGTV videos in full resolution, you can search by typing the username of the user whose IGTV videos you want to download in the smart search box above, or you can download Instagram IGTV videos in full resolution by pasting the link of any IGTV video.</p>
+			</div>
+
+			<div class="fl features mb45">
+				<div class="fl feature">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus" class="svg-inline--fa fa-search-plus fa-w-16 featureIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg>
+					<span class="featuresHeading">Full Size</span>
+					<p class="pFeature">You can see the full resolution of the profile pictures.</p>
+				</div>
+				<div class="fl feature">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download fa-w-16 featureIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>
+					<span class="featuresHeading">Downloadable</span>
+					<p class="pFeature">You can download profile pictures to your smart phone and computer.</p>
+				</div>
+				<div class="fl feature">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="history" class="svg-inline--fa fa-history fa-w-16 featureIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 255.531c.253 136.64-111.18 248.372-247.82 248.468-59.015.042-113.223-20.53-155.822-54.911-11.077-8.94-11.905-25.541-1.839-35.607l11.267-11.267c8.609-8.609 22.353-9.551 31.891-1.984C173.062 425.135 212.781 440 256 440c101.705 0 184-82.311 184-184 0-101.705-82.311-184-184-184-48.814 0-93.149 18.969-126.068 49.932l50.754 50.754c10.08 10.08 2.941 27.314-11.313 27.314H24c-8.837 0-16-7.163-16-16V38.627c0-14.254 17.234-21.393 27.314-11.314l49.372 49.372C129.209 34.136 189.552 8 256 8c136.81 0 247.747 110.78 248 247.531zm-180.912 78.784l9.823-12.63c8.138-10.463 6.253-25.542-4.21-33.679L288 256.349V152c0-13.255-10.745-24-24-24h-16c-13.255 0-24 10.745-24 24v135.651l65.409 50.874c10.463 8.137 25.541 6.253 33.679-4.21z"></path></svg>
+					<span class="featuresHeading">History</span>
+					<p class="pFeature">The profiles you look at are saved in your browser cookies, so you can look it again.</p>
+				</div>
+			</div>
+
+			<!-- ARTICLES -->
+			<ul class="fl articleList mb45">
+				<li class="fl articles">
+					<div class="fl articleInner">
+						<div class="fl articleThumbnail">
+							<a href="https://instabig.net/en/instagram-profile-picture-zoom" title="Instagram Profile Picture Zoom">
+								<img class="articleImg" src="https://instabig.net/cdn/img/articles/cover/instagram-profile-picture-zoom-cover-873245.webp" alt="Instagram Profile Picture Zoom">
+							</a>
+						</div>
+						<div class="fl articleBody">
+							<a href="https://instabig.net/en/instagram-profile-picture-zoom" title="Instagram Profile Picture Zoom">
+								<span class="articleTitle">Instagram Profile Picture Zoom</span>
+							</a>
+							<span class="articleSummary">InstaBig to zoom the Instagram profile picture. Zoom and download full resolution Instagram profile pictures online without the app.</span>
+						</div>
+					</div>
+				</li>
+				<li class="fl articles">
+					<div class="fl articleInner">
+						<div class="fl articleThumbnail">
+							<a href="https://instabig.net/en/download-instagram-stories-and-highlights" title="Download Instagram Stories and Highlights">
+								<img class="articleImg" src="https://instabig.net/cdn/img/articles/cover/download-instagram-stories-and-highlights-cover-622905.webp" alt="Download Instagram Stories and Highlights">
+							</a>
+						</div>
+						<div class="fl articleBody">
+							<a href="https://instabig.net/en/download-instagram-stories-and-highlights" title="Download Instagram Stories and Highlights">
+								<span class="articleTitle">Download Instagram Stories and Highlights</span>
+							</a>
+							<span class="articleSummary">Download Instagram stories and highlights and make them permanent with InstaBig. View full resolution stories and download them to your phone.</span>
+						</div>
+					</div>
+				</li>
+				<li class="fl articles">
+					<div class="fl articleInner">
+						<div class="fl articleThumbnail">
+							<a href="https://instabig.net/en/download-instagram-reels-online" title="Download Instagram Reels Online">
+								<img class="articleImg" src="https://instabig.net/cdn/img/articles/cover/download-instagram-reels-online-cover-318151.webp" alt="Download Instagram Reels Online">
+							</a>
+						</div>
+						<div class="fl articleBody">
+							<a href="https://instabig.net/en/download-instagram-reels-online" title="Download Instagram Reels Online">
+								<span class="articleTitle">Download Instagram Reels Online</span>
+							</a>
+							<span class="articleSummary">InstaBig to download full resolution Instagram Reels. Download Instagram Reels videos to your phone for free and online.</span>
+						</div>
+					</div>
+				</li>
+				<li class="fl articles mb0">
+					<div class="fl articleInner">
+						<div class="fl articleThumbnail">
+							<a href="https://instabig.net/en/download-instagram-photos-and-videos" title="Download Instagram Photos and Videos">
+								<img class="articleImg" src="https://instabig.net/cdn/img/articles/cover/download-instagram-photos-and-videos-cover-440729.webp" alt="Download Instagram Photos and Videos">
+							</a>
+						</div>
+						<div class="fl articleBody">
+							<a href="https://instabig.net/en/download-instagram-photos-and-videos" title="Download Instagram Photos and Videos">
+								<span class="articleTitle">Download Instagram Photos and Videos</span>
+							</a>
+							<span class="articleSummary">Download Instagram photos and videos to your phone in full resolution. InstaBig online Instagram photo and video download tool.</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+
+	<div class="fl footer">
+		<div class="footerInner">
+			<ul class="list-style-none">
+								<li class="m0 inline-block">
+					<img src="https://instabig.net/cdn/img/logo-footer.svg" class="footerLogo" alt="InstaBig">
+				</li>
+			</ul>
+			<ul class="list-style-none">
+				<li class="inline-block">
+					<a href="https://instabig.net/languages?lg=en">English</a>
+				</li>
+				<li class="inline-block">
+					<a href="/cdn-cgi/l/email-protection#1774787963767463577e79646376757e7039797263">Contact</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://instabig.net/privacy-policy">Privacy Policy</a>
+				</li>
+								<li class="inline-block">&copy; 2021 InstaBig</li>
+			</ul>
+			<ul class="list-style-none">
+							<li class="inline-block">
+					<a href="https://instabig.net/en" class="otherLanguages">Full size Instagram profile photos</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://instabig.net/tr" class="otherLanguages">Büyük Instagram profil fotoğrafları</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://instabig.net/ru" class="otherLanguages">Полноразмерные фотографии из Instagram</a>
+				</li>
+						</ul>
+		</div>
+	</div>
+
+
+
+<!-- SCRIPTS -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+
+var showAlertValue = 0;
+
+// Popular #1
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		if (isJson(this.responseText) == false) {
+			if (showAlertValue == 0) {
+				showAlertValue = 1;
+				showAlert();
+			}
+		}
+		else {
+			myObjX = JSON.parse(this.responseText);
+			for (var i = 0; i < myObjX.users.length; i++) {
+				if (myObjX.users[i].user.username == 'amandacerny') {
+					document.getElementById("prfPicLoading").classList.add("dpN");
+					document.getElementById("prfUsernameLoading").classList.add("dpN");
+					document.getElementById("prfNameLoading").classList.add("dpN");
+					document.getElementById("imgPrfPic").classList.remove("dpN");
+					document.getElementById("prfUsernameDiv").classList.remove("dpN");
+					document.getElementById("prfName").classList.remove("dpN");
+					document.getElementById("imgPrfPic").src = myObjX.users[i].user.profile_pic_url;
+					document.getElementById("prfUsername").innerHTML = myObjX.users[i].user.username;
+					document.getElementById("prfName").innerHTML = myObjX.users[i].user.full_name;
+
+					if (myObjX.users[i].user.is_verified == true)
+						document.getElementById("prfVerifiedDiv").classList.remove("dpN");
+
+					break;
+				}
+			}
+		}
+	}
+}
+xmlhttp.open("GET", "https://www.instagram.com/web/search/topsearch/?context=user&query=amandacerny", true);
+xmlhttp.send();
+
+
+// Popular #2
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		if (isJson(this.responseText) == false) {
+			if (showAlertValue == 0) {
+				showAlertValue = 1;
+				showAlert();
+			}
+		}
+		else {
+			myObjX = JSON.parse(this.responseText);
+			for (var i = 0; i < myObjX.users.length; i++) {
+				if (myObjX.users[i].user.username == 'hannahstocking') {
+					document.getElementById("prfPicLoading2").classList.add("dpN");
+					document.getElementById("prfUsernameLoading2").classList.add("dpN");
+					document.getElementById("prfNameLoading2").classList.add("dpN");
+					document.getElementById("imgPrfPic2").classList.remove("dpN");
+					document.getElementById("prfUsernameDiv2").classList.remove("dpN");
+					document.getElementById("prfName2").classList.remove("dpN");
+					document.getElementById("imgPrfPic2").src = myObjX.users[i].user.profile_pic_url;
+					document.getElementById("prfUsername2").innerHTML = myObjX.users[i].user.username;
+					document.getElementById("prfName2").innerHTML = myObjX.users[i].user.full_name;
+
+					if (myObjX.users[i].user.is_verified == true)
+						document.getElementById("prfVerifiedDiv2").classList.remove("dpN");
+
+					break;
+				}
+			}
+		}
+	}
+}
+xmlhttp.open("GET", "https://www.instagram.com/web/search/topsearch/?context=user&query=hannahstocking", true);
+xmlhttp.send();
+
+
+// Popular #3
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		if (isJson(this.responseText) == false) {
+			if (showAlertValue == 0) {
+				showAlertValue = 1;
+				showAlert();
+			}
+		}
+		else {
+			myObjX = JSON.parse(this.responseText);
+			for (var i = 0; i < myObjX.users.length; i++) {
+				if (myObjX.users[i].user.username == 'addisonraee') {
+					document.getElementById("prfPicLoading3").classList.add("dpN");
+					document.getElementById("prfUsernameLoading3").classList.add("dpN");
+					document.getElementById("prfNameLoading3").classList.add("dpN");
+					document.getElementById("imgPrfPic3").classList.remove("dpN");
+					document.getElementById("prfUsernameDiv3").classList.remove("dpN");
+					document.getElementById("prfName3").classList.remove("dpN");
+					document.getElementById("imgPrfPic3").src = myObjX.users[i].user.profile_pic_url;
+					document.getElementById("prfUsername3").innerHTML = myObjX.users[i].user.username;
+					document.getElementById("prfName3").innerHTML = myObjX.users[i].user.full_name;
+
+					if (myObjX.users[i].user.is_verified == true)
+						document.getElementById("prfVerifiedDiv3").classList.remove("dpN");
+
+					break;
+				}
+			}
+		}
+	}
+}
+xmlhttp.open("GET", "https://www.instagram.com/web/search/topsearch/?context=user&query=addisonraee", true);
+xmlhttp.send();
+
+
+
+
+
+
+
+
+
+/*function inputFocus() {
+	document.getElementsByClassName("inpSearch")[0].focus();
+}
+
+document.body.onload = inputFocus();*/
+</script>
+<script src="https://instabig.net/js/main.js?v=4.894"></script>
+<script type="text/javascript">
+	// detect json
+	function isJson(str) {
+		try {
+			JSON.parse(str);
+		} catch (e) {
+			return false;
+		}
+		return true;
+	}
+
+	// show error alert
+	function showAlert() {
+		var xmlhttp2 = new XMLHttpRequest();
+		xmlhttp2.open("GET", "https://instabig.net/error?type=instagram_ip_block&lg=en", true);
+		xmlhttp2.send();
+
+		var alertRed = document.createElement('div');
+		alertRed.innerHTML = "<b>We are having trouble accessing Instagram data. Please follow the steps below.</b><br>If you are using WiFi, try restarting your modem or switching to mobile data. If you are using mobile data, try turning mobile data off and on again.<br>It may also be caused by using a VPN or making too many requests.";
+		alertRed.classList.add('alertRed');
+		document.getElementsByTagName('body')[0].appendChild(alertRed);
+	}
+</script>
+<script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+			//console.log("Will the service worker register?");
+			navigator.serviceWorker.register('https://instabig.net/service-worker.js')
+		.then(function(reg) {
+			console.log("ServiceWorker is working.");
+		}).catch(function(err) {
+			console.log("ServiceWorker isn't working. Error:", err)
+		});
+	}
+</script>
+<script src="https://instabig.net/js/searchBoxInBody.js?v=4.894"></script>
+
+</body>
+</html>
