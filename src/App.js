@@ -6,7 +6,7 @@ import Igtv from './Pages/Igtv';
 import Posts from './Pages/Posts';
 import Profile from './Pages/Profile';
 import Reels from './Pages/Reels';
-import ViewPorfile from './Pages/ViewProfile';
+import Fullsize from './Pages/Fullsize';
 import Stories from './Pages/Stories';
 
 
@@ -22,7 +22,7 @@ function App() {
       <Route exact path="/posts" component = {Posts} />
       <Route exact path="/profile-picture" component = {Profile} />
       <Route exact path="/stories" component = {Stories} />
-      <Route exact path="/view-profile" component = {ViewPorfile} />
+      <Route exact path="/fullsize/:username/" component = {Fullsize} />
       </Switch>
     </Router>
   );
