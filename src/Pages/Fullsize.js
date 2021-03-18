@@ -14,7 +14,10 @@ const Fullsize = () =>{
     followers:"",
     following:"",
     full_name:"",
-    biography:"" 
+    biography:"",
+    userName:"" ,
+    is_verified:"",
+    is_private:""
   });
   // Getting username from parameters
   const params = useParams();
@@ -32,13 +35,18 @@ const Fullsize = () =>{
       var following = response["data"]["graphql"]["user"]["edge_follow"]["count"]; // Getting Following 
       var full_name = response["data"]["graphql"]["user"]["full_name"]; //Full name 
       var biography = response["data"]["graphql"]["user"]["biography"]; //Biography 
- 
+      var userName =response["data"] ["graphql"]["user"]["username"];
+      var is_verified = response["data"]["graphql"]["user"]["is_verified"];
+      var is_private = response["data"] ["graphql"]["user"]["is_private"];
       setProfile({
         photo:photo,
         followers:followers,
         following:following,
         full_name:full_name,
-        biography:biography
+        biography:biography,
+        userName:userName,
+        is_verified:is_verified,
+        is_private: is_private
       });
 
     }
@@ -77,23 +85,41 @@ return (
       </div>
       <div id="userInfo" className="mb45">
         <div className="fl prfInfo mb45">
-          <div className="fl prfPic">
-            {/* LOADING */}<div id="prfPicLoading" className="gradientLoading prfPicLoading" />
-            <a href="https://www.instagram.com/amandacerny/" target="_blank">
-              <img id="imgPrfPic" className="dpN imgPrfPic" src="/assets/images/instabig.net-fullsize" />
-            </a>
-          </div>
+        {!!userProfile ? <div className="fl prfPic">
+           
+             
+           <img id="imgPrfPic" className="imgPrfPic" src={userProfile.photo}/>
+         </div>
+           :<div className="fl prfPic">  <div id="prfPicLoading" className="gradientLoading prfPicLoading" />
+           <a href="https://www.instagram.com/amandacerny/" target="_blank">
+            
+             <img id="imgPrfPic" className="dpN imgPrfPic" src="/assets/images/instabig.net-fullsize" />
+           </a></div>}
+            {/* LOADING */}
+          
           <div className="fl prfCont">
             <div className="fl prfContL">
-              {/* LOADING */}<div id="prfUsernameLoading" className="gradientLoading prfUsernameLoading" />
-              <div id="prfUsernameDiv" className="dpN fl prfUsername">
-                <span id="prfUsername" className="fw600" />
-                <div id="prfVerifiedDiv" className="dpN middleIcon">
+              {/* LOADING */}
+              {!!userProfile&& userProfile.is_verified== false?
+                <span id="prfUsername" className="fw600">
+               {userProfile.userName}
+               </span>
+               :
+                <div id="prfVerifiedDiv" className=" middleIcon">
+                 {userProfile.userName}
                   <svg className="prfVerified" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea" /></svg>
                 </div>
+                  }      
+              <div id="prfUsernameDiv" className=" fl prfUsername">
+              {!!userProfile ? 
+              <div  >
+            {  userProfile. full_name}
+              </div>
+              :""}   
               </div>
               {/* LOADING */}<div id="prfNameLoading" className="gradientLoading prfNameLoading" />
-              <div id="prfName" className="dpN fl prfName" />
+              <div id="prfName" className=" fl prfName" />
+              
             </div>
             <div className="fl prfContR">
               {/* LOADING */}<div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading" />
@@ -113,7 +139,15 @@ return (
         </div>
         <div className="fl bigPP">
           {/* LOADING */}<div id="imgBigPPDiv" className="gradientLoading imgBigPPLoading" />
-          <img id="imgBigPP" className="dpN imgBigPP" src="/assets/images/instabig.net-fullsize" />
+          {!!userProfile&& userProfile.is_private==true
+          ?
+          <>
+          <i class="fas fa-lock"/>
+          <img id="imgBigPP" className="dpN imgBigPP" src="/assets/images/instabig.net-fullsize"  />
+          </>
+          :
+          <img id="imgBigPP" className="dpN imgBigPP" src="/assets/images/instabig.net-fullsize"  />
+}
         </div>
         <div className="fl picButtons">
           <span>
