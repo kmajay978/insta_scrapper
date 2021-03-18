@@ -60,3 +60,9 @@ export const removeDublicateFrds = (friendList) => {
     })
     return friendList
 }
+
+export const GetUserPosts = (userData) =>{
+
+    const allPostUrl = `https://www.instagram.com/graphql/query/?query_hash=${userData.query_hash}&variables={"id":"${userData.id}","first":"${userData.first}","after":"${userData.after}"}`;
+    return allPostUrl;
+}

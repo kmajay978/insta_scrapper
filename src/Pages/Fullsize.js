@@ -75,7 +75,6 @@ return (
       {/* ADS FRAME */}
       <div className="ads mb45">
         {/* Profile Picture ID 1 */}
-        <ins className="adsbygoogle" style={{display: 'block'}} data-ad-client="ca-pub-6411740468955874" data-ad-slot={1398544671} data-ad-format="auto" data-full-width-responsive="true" />
       </div>
       <div id="noUser" className="dpN error mb45">
         <div className="middleIcon">
@@ -138,13 +137,15 @@ return (
              </div>
         </div>
         <div className="fl bigPP">
-          {!!userProfile&&
+          {!!userProfile && userProfile.photo ?
         <img id="imgPrfPic" className="imgBigPP" src={userProfile.photo}/>
+          :
+          <div id="imgBigPPDiv" className="gradientLoading imgBigPPLoading" />
           }
-          {/* LOADING */}<div id="imgBigPPDiv" className="gradientLoading imgBigPPLoading" />
+         
          
           
-          <img id="imgBigPP" className=" imgBigPP" src="/assets/images/instabig.net-fullsize"  />
+          {/* <img id="imgBigPP" className=" imgBigPP" src="/assets/images/instabig.net-fullsize"  /> */}
 
         </div>
         <div className="fl picButtons">
@@ -157,13 +158,15 @@ return (
             </a>
           </span>
           <span className="picDownload">
-            <a id="downloadLink"  href={userProfile.photo} download>
+            <a id="downloadLink" download={userProfile.userName}  href={userProfile.photo} >
               <div className="middleIcon">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" className="svg-inline--fa fa-download fa-w-16 bigImgIcons" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z" /></svg>
               </div>
               <span>Download</span>
             </a>
           </span>
+        
+          
         </div>
         {/* Related Profiles */}
         <div className="fl popular mb45 dpN" id="relatedProfiles" />

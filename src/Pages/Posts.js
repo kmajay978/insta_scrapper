@@ -3,7 +3,39 @@ import axios from "axios";
 import NavLinks from '../components/Nav';
 import SearchBar from '../components/SearchBar';
 import Footer from '../components/Footer';
+import { GetUserPosts } from '../components/CommonFunction';
 const Posts = () =>{
+
+  const [userPost , setPosts] = useState();
+
+//after : graphql.user.edge_owner_to_timeline.page_info.end_cursor
+// id : graphql.user.id
+  const setData = {
+    "query_hash": "472f257a40c653c64c666ce877d59d2b",
+    "id":"2137174039",
+    "first":12,
+    "after":""
+  }
+
+  const AllDataPostApi = GetUserPosts(setData);
+
+  const AllUserPosts = () =>{
+    axios.get(AllDataPostApi)
+ .then((response) => { 
+   if(response)
+   {
+     console.log(response,"qqqqqqqqqqqqqqqqqq");
+   }
+
+ });
+ }
+ 
+  useEffect (() =>{
+    AllUserPosts();
+  
+  },[])
+
+  
 return (
 <div>
   {/* CONTAINER */}
