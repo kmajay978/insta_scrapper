@@ -47,84 +47,29 @@ return (
   {/* BODY */}
   <div className="fl bdy">
     <div className="bdyInner">
-      {/* ADS FRAME */}
-      <div className="fl ads mb45">
+  
         {/* Posts Home 1 */}
-        <ins className="adsbygoogle" style={{display: 'block'}} data-ad-client="ca-pub-6411740468955874" data-ad-slot={6930072950} data-ad-format="auto" data-full-width-responsive="true" />
-      </div>
-      <div className="fl popular mb45">
-        <span className="popularH1">Popular</span>
-        {/* Popular #1 */}
-        <a href="amandacerny?ref=popular.html">
-          <div className="fl popularPrfInfo">
-            <div className="fl popularPrfPic">
-              {/* LOADING */}<div id="prfPicLoading" className="gradientLoading popularPrfPicLoading" />
-              <img id="imgPrfPic" className="dpN popularImgPrfPic" src="/assets/images/https:-instabig.net" />
-            </div>
-            <div className="fl popularPrfCont">
-              <div className="fl popularPrfContL">
-                {/* LOADING */}<div id="prfUsernameLoading" className="gradientLoading popularPrfUsernameLoading" />
-                <div id="prfUsernameDiv" className="dpN fl popularPrfUsername">
-                  <span id="prfUsername" className="fw600" />
-                  <div id="prfVerifiedDiv" className="dpN popularMiddleIcon">
-                    <svg className="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea" /></svg>
-                  </div>
-                </div>
-                {/* LOADING */}<div id="prfNameLoading" className="gradientLoading popularPrfNameLoading" />
-                <div id="prfName" className="dpN fl popularPrfName" />
-              </div>
-            </div>
-          </div>
-        </a>
-        {/* Popular #2 */}
-        <a href="hannahstocking?ref=popular.html">
-          <div className="fl popularPrfInfo popularML15">
-            <div className="fl popularPrfPic">
-              {/* LOADING */}<div id="prfPicLoading2" className="gradientLoading popularPrfPicLoading" />
-              <img id="imgPrfPic2" className="dpN popularImgPrfPic" src="/assets/images/https:-instabig.net" />
-            </div>
-            <div className="fl popularPrfCont">
-              <div className="fl popularPrfContL">
-                {/* LOADING */}<div id="prfUsernameLoading2" className="gradientLoading popularPrfUsernameLoading" />
-                <div id="prfUsernameDiv2" className="dpN fl popularPrfUsername">
-                  <span id="prfUsername2" className="fw600" />
-                  <div id="prfVerifiedDiv2" className="dpN popularMiddleIcon">
-                    <svg className="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea" /></svg>
-                  </div>
-                </div>
-                {/* LOADING */}<div id="prfNameLoading2" className="gradientLoading popularPrfNameLoading" />
-                <div id="prfName2" className="dpN fl popularPrfName" />
-              </div>
-            </div>
-          </div>
-        </a>
-        {/* Popular #3 */}
-        <a href="addisonraee?ref=popular.html">
-          <div className="fl popularPrfInfo popularML15">
-            <div className="fl popularPrfPic">
-              {/* LOADING */}<div id="prfPicLoading3" className="gradientLoading popularPrfPicLoading" />
-              <img id="imgPrfPic3" className="dpN popularImgPrfPic" src="/assets/images/https:-instabig.net" />
-            </div>
-            <div className="fl popularPrfCont">
-              <div className="fl popularPrfContL">
-                {/* LOADING */}<div id="prfUsernameLoading3" className="gradientLoading popularPrfUsernameLoading" />
-                <div id="prfUsernameDiv3" className="dpN fl popularPrfUsername">
-                  <span id="prfUsername3" className="fw600" />
-                  <div id="prfVerifiedDiv3" className="dpN popularMiddleIcon">
-                    <svg className="popularPrfVerified" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 432 425"><path id="Subtraction_1" data-name="Subtraction 1" d="M1778.312,1003.579h0l-56.923-27.025-59.175,24.706-40.747-52.728-62.124-5.282-1.843-75.982L1510,825.137l34.834-54.344-15.068-67.882,65.211-19.875,10.822-57.229h71.923L1725.455,590l53.63,40.946h64.072l12.531,59.454,58.293,28.46-13.24,63.931,31.07,56.657-47.2,44.983v64.04l-72.863,11.455-33.439,43.652Zm-128.377-202.6L1629.2,827.787l70.63,56.826,100.7-117.844-26.282-23.257L1694.2,834.346l-44.263-33.367Z" transform="translate(-1505 -584)" fill="#2c96ea" /></svg>
-                  </div>
-                </div>
-                {/* LOADING */}<div id="prfNameLoading3" className="gradientLoading popularPrfNameLoading" />
-                <div id="prfName3" className="dpN fl popularPrfName" />
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+      
       {/* Nav Bar */}
       <div className="fl navBar mb45">
         <NavLinks />
       </div>
+{/* Posts will be shows here */}
+      <div class="fl posts mb45">
+					<div class="gradientLoading post"></div>
+					<div class="gradientLoading post postMl"></div>
+					<div class="gradientLoading post postMl"></div>
+					<div class="gradientLoading post postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div>
+				</div>
+
       <div className="fl searchInBody mb45">
         <span className="searchInBodyH1">Paste Instagram post link:</span>
         <input type="text" className="inpSearch inpSearchBody" autoCorrect="off" autoCapitalize="none" placeholder="https://www.instagram.com/p/CH82CJOng28/" />
