@@ -4,9 +4,12 @@ import NavLinks from '../components/Nav';
 import SearchBar from '../components/SearchBar';
 import Footer from '../components/Footer';
 import { useParams } from 'react-router';
+import { useDispatch , useSelector } from 'react-redux';
+import { userDetail } from '../features/userSlice';
 
 
 const Fullsize = () =>{
+  const dispatch = useDispatch();
 
   const [userProfile , setProfile] = useState({
     
@@ -48,13 +51,17 @@ const Fullsize = () =>{
         is_verified:is_verified,
         is_private: is_private
       });
-
+      dispatch(
+        userDetail({
+          userDetail: response["data"]["graphql"]["user"]
+        })
+    );
     }
-
+    
   });
   }
 
-  console.log(userProfile,"aaaaaaaaaaaa")
+  // console.log(userProfile,"aaaaaaaaaaaa")
 
 useEffect (() =>{
   GetProfile();
@@ -114,14 +121,14 @@ return (
               <div  >
             {  userProfile.full_name}
               </div>
-              :""}   
+              :<div id="prfNameLoading" className="gradientLoading prfNameLoading" />}   
               </div>
-              {/* LOADING */}<div id="prfNameLoading" className="gradientLoading prfNameLoading" />
+              
               <div id="prfName" className=" fl prfName" />
               
             </div>
             <div className="fl prfContR">
-              {/* LOADING */}<div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading" />
+              <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading" />
               <div id="prfFollowersDiv" className="dpN prfFollowers"><span id="prfFollowers" className="fw600" /> followers</div>
             </div>
           </div>
