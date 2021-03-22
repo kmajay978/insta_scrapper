@@ -6,13 +6,13 @@ import Footer from '../components/Footer';
 import { GetUserPosts } from '../components/CommonFunction';
 const Posts = () =>{
 
-  const [userPost , setPosts] = useState();
+  const [userPost , setPosts] = useState([]);
 
 //after : graphql.user.edge_owner_to_timeline.page_info.end_cursor
 // id : graphql.user.id
   const setData = {
     "query_hash": "472f257a40c653c64c666ce877d59d2b",
-    "id":"2137174039",
+    "id":"1478837187",
     "first":12,
     "after":""
   }
@@ -25,6 +25,7 @@ const Posts = () =>{
    if(response)
    {
      console.log(response,"qqqqqqqqqqqqqqqqqq");
+     setPosts(response.data.data.user.edge_owner_to_timeline_media.edges);
    }
 
  });
@@ -35,7 +36,7 @@ const Posts = () =>{
   
   },[])
 
-  
+  console.log(userPost);
 return (
 <div>
   {/* CONTAINER */}
@@ -56,18 +57,26 @@ return (
       </div>
 {/* Posts will be shows here */}
       <div class="fl posts mb45">
-					<div class="gradientLoading post"></div>
-					<div class="gradientLoading post postMl"></div>
-					<div class="gradientLoading post postMl"></div>
+					<div class="gradientLoading post">
+            
+          </div>
+          {userPost.map((item , i)  => ( 
+					<div class="gradientLoading post postMl">
+           <img src={item.node.display_url}></img>
+          </div>
+          ))}
+					{/* <div class="gradientLoading post postMl"></div>
+					<div class="gradientLoading post postMt"></div>
+					<div class="gradientLoading post postMl postMt">
+            hii
+          </div>
+					<div class="gradientLoading post postMl postMt"></div>
 					<div class="gradientLoading post postMt"></div>
 					<div class="gradientLoading post postMl postMt"></div>
 					<div class="gradientLoading post postMl postMt"></div>
 					<div class="gradientLoading post postMt"></div>
 					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
+					<div class="gradientLoading post postMl postMt"></div> */}
 				</div>
 
       <div className="fl searchInBody mb45">
