@@ -25,6 +25,7 @@ const Posts = () =>{
    if(response)
    {
      console.log(response,"qqqqqqqqqqqqqqqqqq");
+     
    }
 
  });
@@ -55,19 +56,22 @@ return (
         <NavLinks />
       </div>
 {/* Posts will be shows here */}
-      <div class="fl posts mb45">
-					<div class="gradientLoading post"></div>
-					<div class="gradientLoading post postMl"></div>
-					<div class="gradientLoading post postMl"></div>
-					<div class="gradientLoading post postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
-					<div class="gradientLoading post postMl postMt"></div>
+      <div className="fl posts mb45">
+        
+					<div className="gradientLoading post"></div>
+					<div className="gradientLoading post postMl">
+       
+          </div>
+					<div className="gradientLoading post postMl"></div>
+					<div className="gradientLoading post postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div>
 				</div>
 
       <div className="fl searchInBody mb45">
