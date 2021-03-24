@@ -24,10 +24,12 @@ const Posts = () =>{
   const AllUserPosts = () =>{
     axios.get(AllDataPostApi)
  .then((response) => { 
-   if(response)
+   if(!!response)
    {
      console.log(response,"qqqqqqqqqqqqqqqqqq");
+     if(!!response.data.data.user.edge_owner_to_timeline_media.edges){
      setPosts(response.data.data.user.edge_owner_to_timeline_media.edges);
+     }
    }
 
  });

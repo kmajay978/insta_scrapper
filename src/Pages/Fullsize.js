@@ -129,16 +129,16 @@ return (
               
             </div>
             <div className="fl prfContR">
-            <div id="prfFollowersDiv" className=" prfFollowers"><span id="prfFollowers" className="fw600" /> followers</div>
+            
             {!!userProfile ? 
- 
-              <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading">   {userProfile.followers}</div>
-            :""}
-            <div id="prffollowing" className=" prfFollowing"><span id="prfFollowing" className="fw600" /> following</div>
-            {!!userProfile ? 
- 
-              <div id="prfFollowing" className="prfFollowing">{userProfile.following}</div>
-            :""}
+           <div id="prfFollowersDiv" className=" prfFollowers"><span id="prfFollowers" className="fw600" /> followers  {userProfile.followers}</div>
+            :  <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading">  </div>
+            }
+              {!!userProfile ? 
+           <div id="prfFollowersDiv" className=" prfFollowers"><span id="prfFollowers" className="fw600" /> following {userProfile.following}</div>
+            :  <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading">  </div>
+            }
+           
             </div>
         
           </div>
