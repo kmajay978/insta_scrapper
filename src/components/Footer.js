@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="footerInner">
           <ul className="list-style-none">
             <li className="m0 inline-block">
-              <img src="https://img.icons8.com/cotton/64/000000/instagram-new.png" className="footerLogo" alt="InstaScrapper"   /><span class="logo-text">Instagram Scrapper</span>
+              <img src="https://img.icons8.com/cotton/64/000000/instagram-new.png" className="footerLogo" alt="InstaScrapper"   /><span className="logo-text">Instagram Scrapper</span>
             </li>		
           </ul>
           <ul className="list-style-none">

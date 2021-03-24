@@ -33,6 +33,7 @@ const Fullsize = () =>{
 
     if(response)
     {
+      //console.log(response,"rrrrrrrrrrrrrrrrr");
       var photo = response["data"]["graphql"]["user"]["profile_pic_url_hd"];  //Getting photo here
       var followers = response["data"]["graphql"]["user"]["edge_followed_by"]["count"]; // Getting followed by 
       var following = response["data"]["graphql"]["user"]["edge_follow"]["count"]; // Getting Following 
@@ -61,7 +62,7 @@ const Fullsize = () =>{
   });
   }
 
-  // console.log(userProfile,"aaaaaaaaaaaa")
+  //console.log(userProfile,"aaaaaaaaaaaa")
 
 useEffect (() =>{
   GetProfile();
@@ -128,9 +129,18 @@ return (
               
             </div>
             <div className="fl prfContR">
-              <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading" />
-              <div id="prfFollowersDiv" className="dpN prfFollowers"><span id="prfFollowers" className="fw600" /> followers</div>
+            <div id="prfFollowersDiv" className=" prfFollowers"><span id="prfFollowers" className="fw600" /> followers</div>
+            {!!userProfile ? 
+ 
+              <div id="prfFollowersLoading" className="gradientLoading prfFollowersLoading">   {userProfile.followers}</div>
+            :""}
+            <div id="prffollowing" className=" prfFollowing"><span id="prfFollowing" className="fw600" /> following</div>
+            {!!userProfile ? 
+ 
+              <div id="prfFollowing" className="prfFollowing">{userProfile.following}</div>
+            :""}
             </div>
+        
           </div>
         </div>
         {/* Nav Bar */}

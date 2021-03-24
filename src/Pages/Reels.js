@@ -21,18 +21,18 @@ return (
         <ins className="adsbygoogle" style={{display: 'block'}} data-ad-client="ca-pub-6411740468955874" data-ad-slot={5882932209} data-ad-format="auto" data-full-width-responsive="true" />
       </div>
      <div class="fl posts mb45">
-					<div class="gradientLoading reels"></div>
-					<div class="gradientLoading reels reelsMl"></div>
-					<div class="gradientLoading reels reelsMl"></div>
-					<div class="gradientLoading reels reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
-					<div class="gradientLoading reels reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
-					<div class="gradientLoading reels reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
-					<div class="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels"></div>
+					<div className="gradientLoading reels reelsMl"></div>
+					<div className="gradientLoading reels reelsMl"></div>
+					<div className="gradientLoading reels reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
+					<div className="gradientLoading reels reelsMl reelsMt"></div>
 				</div>
       {/* Nav Bar */}
       <div className="fl navBar mb45">

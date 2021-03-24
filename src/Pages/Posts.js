@@ -4,19 +4,21 @@ import NavLinks from '../components/Nav';
 import SearchBar from '../components/SearchBar';
 import Footer from '../components/Footer';
 import { GetUserPosts } from '../components/CommonFunction';
+import { useSelector } from 'react-redux';
+import {userDetail, userDetailData} from '../features/userSlice'
 const Posts = () =>{
 
-  const [userPost , setPosts] = useState();
-
+  const [userPost , setPosts] = useState([]);
+  const userData = useSelector(userDetailData);
 //after : graphql.user.edge_owner_to_timeline.page_info.end_cursor
 // id : graphql.user.id
   const setData = {
     "query_hash": "472f257a40c653c64c666ce877d59d2b",
-    "id":"2137174039",
+    "id":userData.id,
     "first":12,
     "after":""
   }
-
+ console.log(userData, "hii")
   const AllDataPostApi = GetUserPosts(setData);
 
   const AllUserPosts = () =>{
@@ -25,7 +27,7 @@ const Posts = () =>{
    if(response)
    {
      console.log(response,"qqqqqqqqqqqqqqqqqq");
-     
+     setPosts(response.data.data.user.edge_owner_to_timeline_media.edges);
    }
 
  });
@@ -36,7 +38,7 @@ const Posts = () =>{
   
   },[])
 
-  
+  console.log(userPost);
 return (
 <div>
   {/* CONTAINER */}
@@ -56,24 +58,33 @@ return (
         <NavLinks />
       </div>
 {/* Posts will be shows here */}
+     {userData.is_private==false ?
       <div className="fl posts mb45">
-        
-					<div className="gradientLoading post"></div>
-					<div className="gradientLoading post postMl">
-       
+					<div className="gradientLoading post">
+            
           </div>
-					<div className="gradientLoading post postMl"></div>
+          {userPost.map((item , i)  => ( 
+					<div className="gradientLoading post postMl">
+       {item.node.is_video==false ?  <img src={item.node.display_url}/> : <video src={item.node.thumbnail_src} autoPlay/> }  
+          </div>
+          ))}
+					{/* <div className="gradientLoading post postMl"></div>
+					<div className="gradientLoading post postMt"></div>
+					<div className="gradientLoading post postMl postMt">
+            hii
+          </div>
+					<div className="gradientLoading post postMl postMt"></div>
 					<div className="gradientLoading post postMt"></div>
 					<div className="gradientLoading post postMl postMt"></div>
 					<div className="gradientLoading post postMl postMt"></div>
 					<div className="gradientLoading post postMt"></div>
 					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
+					<div className="gradientLoading post postMl postMt"></div> */}
 				</div>
-
+       : <div className="private-account">
+       <i className="fas fa-lock"></i>
+       
+       </div>}
       <div className="fl searchInBody mb45">
         <span className="searchInBodyH1">Paste Instagram post link:</span>
         <input type="text" className="inpSearch inpSearchBody" autoCorrect="off" autoCapitalize="none" placeholder="https://www.instagram.com/p/CH82CJOng28/" />
