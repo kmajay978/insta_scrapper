@@ -62,26 +62,16 @@ return (
 {/* Posts will be shows here */}
      {userData.is_private==false ?
       <div className="fl posts mb45">
-					<div className="gradientLoading post">
+				
+				{userPost.map((item , i)  => ( 
             
-          </div>
-          {userPost.map((item , i)  => ( 
-					<div className="gradientLoading post postMl">
-       {item.node.is_video==false ?  <img src={item.node.display_url}/> : <video src={item.node.thumbnail_src} autoPlay/> }  
-          </div>
-          ))}
-					{/* <div className="gradientLoading post postMl"></div>
-					<div className="gradientLoading post postMt"></div>
-					<div className="gradientLoading post postMl postMt">
-            hii
-          </div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div>
-					<div className="gradientLoading post postMl postMt"></div> */}
+            <>	
+             {item.node.is_video==false ?  <div className="post postMl postMt" style={{ backgroundImage: `url(${item.node.display_url})` }}> </div>: <div className="post postMl postMt" style={{ backgroundImage: `url(${item.node.display_url})` }}></div> }  
+                </>
+                
+                ))}
+              
+                {/* <div className="gradientLoading post postMl postMt"></div> */}
 				</div>
        : <div className="private-account">
        <i className="fas fa-lock"></i>

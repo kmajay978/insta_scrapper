@@ -622,11 +622,12 @@ li.inline-block {
 }
 .post, .topPost {
 	display: inline-block;
-	width: calc(33.33333% - 6px);
+	width: calc(30.33333% - 6px);
 	height: 0;
 	padding-bottom: calc(33.33333% - 6px);
-	background: #f0f0f0;
+	background: #665454;
 	position: relative;
+	background-size: cover;
 }
 .postMl, .reelsMl, .igtvMl {
 	margin-left: 9px !important;
